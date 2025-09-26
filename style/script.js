@@ -177,7 +177,7 @@ function setBoxImage(imageSelected) {
   for (let i = 0; i < minLi.length; i++) {
     minLi[i].innerHTML = "";
     const imgEl = new Image();
-    imgEl.src = `images/${imageSelected}.jpg`;
+    imgEl.src = `images/${imageSelected}.JPG`;
     imgEl.style.width = "100%";
     imgEl.style.height = "100%";
     imgEl.style.objectFit = "cover";
@@ -187,7 +187,7 @@ function setBoxImage(imageSelected) {
   for (let i = 0; i < maxLi.length; i++) {
     maxLi[i].innerHTML = "";
     const imgEl = new Image();
-    imgEl.src = `images/${imageSelected}.jpg`;
+    imgEl.src = `images/${imageSelected}.JPG`;
     imgEl.style.width = "100%";
     imgEl.style.height = "100%";
     imgEl.style.objectFit = "cover";
@@ -205,7 +205,7 @@ const IMAGE_AMT = 9;
 for (let i = 0; i < IMAGE_AMT; i++) {
   const imgEl = new Image();
   const divEl = document.createElement("div");
-  imgEl.src = `images/${i + 1}.jpg`;
+  imgEl.src = `images/${i + 1}.JPG`;
   imgEl.style.width = "100%";
   imgEl.style.height = "100%";
   imgEl.style.objectFit = "cover";
