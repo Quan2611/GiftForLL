@@ -5,21 +5,9 @@
     <title>Dear LinhLinh ❤️</title>
     <meta name="description" content="Change OR Die" />
     <script src="style/jquery.min.js" defer></script>
-    <link
-      type="text/css"
-      href="style/style.css"
-      rel="stylesheet"
-    />
-    <link
-      type="text/css"
-      href="style/image-galley.css"
-      rel="stylesheet"
-    />
-    <link
-      type="text/css"
-      href="style/wave.css"
-      rel="stylesheet"
-    />
+    <link type="text/css" href="style/style.css" rel="stylesheet" />
+    <link type="text/css" href="style/image-galley.css" rel="stylesheet" />
+    <link type="text/css" href="style/wave.css" rel="stylesheet" />
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link
       rel="stylesheet"
@@ -358,6 +346,13 @@
     </script>
 
     <script>
+      const audio = document.getElementById("ForYa");
+      const input = document.getElementById("password");
+
+      input.addEventListener("focus", () => {
+        audio.muted = false; // bỏ mute
+        audio.play(); // phát nhạc
+      });
       function checkPass() {
         const pass = document.getElementById("password").value;
         // chỉnh pass ngày sinh ở đây
