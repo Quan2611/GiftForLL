@@ -346,13 +346,6 @@
     </script>
 
     <script>
-      const audio = document.getElementById("ForYa");
-      const input = document.getElementById("password");
-
-      input.addEventListener("focus", () => {
-        audio.muted = false; // bỏ mute
-        audio.play(); // phát nhạc
-      });
       function checkPass() {
         const pass = document.getElementById("password").value;
         // chỉnh pass ngày sinh ở đây

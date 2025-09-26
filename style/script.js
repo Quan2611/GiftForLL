@@ -118,11 +118,17 @@ console.log("%cCrush Name%s", css, "❤️❤️❤️❤️❤️❤️");
 
 /* start of audio */
 const audio = document.getElementById("ForYa");
+const input = document.getElementById("password");
+
+input.addEventListener("focus", () => {
+  audio.muted = false; // bỏ mute
+  audio.play(); // phát nhạc
+});
 new Promise((resolve) => {
   document.getElementById("sakura").click();
   resolve();
 }).then(() => {
-  meow.play()
+  meow.play();
   audio
     .play()
     .then(() => {
